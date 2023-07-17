@@ -1,0 +1,44 @@
+{
+  "news": [
+    {
+      "id": "29dfb9fa-64f0-4470-a00e-119e1140ec98",
+      "name": "IT CLUB",
+      "description": "Note that the exact steps to fix merge errors may vary depending on the specific situation and the version control system you are using. It's important to carefully review the conflicting sections, understand the changes being made, and ensure the final result is correct and doesn't introduce any unintended issues.",
+      "category": "World News"
+    },
+    {
+      "id": "8840d3fa-19db-48ae-90e5-29576396d614",
+      "name": "Dilshodbek Gulomov",
+      "description": "Note that the exact steps to fix merge errors may vary depending on the specific situation and the version control system you are using. It's important to carefully review the conflicting sections, understand the changes being made, and ensure the final result is correct and doesn't introduce any unintended issues.",
+      "category": "Sport News"
+    },
+    {
+      "id": "917f23b2-a828-4021-8ab6-e0b9943f6e06",
+      "name": "Dilshodbek Gulomov",
+      "description": "Note that the exact steps to fix merge errors may vary depending on the specific situation and the version control system you are using. It's important to carefully review the conflicting sections, understand the changes being made, and ensure the final result is correct and doesn't introduce any unintended issues.",
+      "category": "Hot News"
+    }
+  ],
+  "filters": [
+    {
+      "name": "all",
+      "label": "All",
+      "className": "btn-outline-dark"
+    },
+    {
+      "name": "Hot News",
+      "label": "Hot News",
+      "className": "btn-danger"
+    },
+    {
+      "name": "Sport News",
+      "label": "Sport News",
+      "className": "btn-primary"
+    },
+    {
+      "name": "World News",
+      "label": "World News",
+      "className": "btn-success"
+    }
+  ]
+}

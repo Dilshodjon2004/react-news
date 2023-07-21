@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHttp } from "../hook/useHttp";
 import { useDispatch, useSelector } from "react-redux";
 import { v4 } from "uuid";
-import { newsCreated } from "../redux/actions";
+import { newsCreated } from "../components/NewsList/news_slice";
 
 const NewsAddForm = () => {
   const [name, setName] = useState("");

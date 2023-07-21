@@ -9,7 +9,7 @@ import {
   filtersFetched,
   filtersFetchingError,
   activeFilteredChanged,
-} from "../redux/actions";
+} from "../components/Filter/filter_slice";
 
 const NewsFilter = () => {
   const { filters, filterLoadingStatus, activeFilter } = useSelector(

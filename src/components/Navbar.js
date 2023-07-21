@@ -30,7 +30,7 @@ const Navbar = () => {
         <a
           href="!#"
           className="me-3 py-2 link-body-emphasis text-decoration-none"
-        ></a>
+        >Hi</a>
       </nav>
     </div>
   );

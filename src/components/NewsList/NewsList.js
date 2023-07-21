@@ -1,27 +1,16 @@
 import { useEffect, useCallback } from "react";
-import { useHttp } from "../hook/useHttp";
+import { useHttp } from "../../hook/useHttp";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchNews, newsDeleted } from "../redux/actions";
-import Spinner from "./Spinner";
-import Error from "./Error";
-import NewsListItem from "./NewsListItem";
+import { newsDeleted, fetchNews, filteredNewsSelected } from "./news_slice";
+import Spinner from "../Spinner";
+import Error from "../Error";
+import NewsListItem from "../NewsListItem";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { createSelector } from "reselect";
-import "./style/NewsList.css";
+
+import "./NewsList.css";
 
 const NewsList = () => {
-  const filteredNewsSelected = createSelector(
-    (state) => state.filter.activeFilter,
-    (state) => state.news.news,
-    (filter, news) => {
-      if (filter === "all") {
-        console.log("render");
-        return news;
-      } else {
-        return news.filter((item) => item.category === filter);
-      }
-    }
-  );
+  
 
   const filteredNews = useSelector(filteredNewsSelected);
 
@@ -32,7 +21,7 @@ const NewsList = () => {
   const { request } = useHttp();
 
   useEffect(() => {
-    dispatch(fetchNews(request));
+    dispatch(fetchNews());
     // eslint-disable-next-line
   }, []);
 
@@ -72,7 +61,7 @@ const NewsList = () => {
 
   const element = renderNewsList(filteredNews);
 
-  return <TransitionGroup component="ul">{element}</TransitionGroup>;
+  return <TransitionGroup component="ul">{element} </TransitionGroup>;
 };
 
 export default NewsList;

@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import NewsAddForm from "./components/NewsAddForm";
 import NewsFilter from "./components/NewsFilter";
-import NewsList from "./components/NewsList";
+import NewsList from "./components/NewsList/NewsList";
 
 const App = () => {
   return (
